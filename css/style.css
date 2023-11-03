@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    
+    padding: 0;
+}
+
+.wrapper, .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+body main .wrapper {
+    background-color: #ffffff;
+    width: 100%;
+
+}
+
+/* skip links */
+.skip-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.skip-links li a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.skip-links li a:focus {
+    top: 0;
+}
+
+/* header */
+header.bg-cr {
+    background: white url(../images/bg.png);
+    color: #000000;
+    padding: 10px 0;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .logo img {
+    border-radius: 50%;
+    width: 80px;
+}
+
+header nav {
+    padding: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+header nav ul li a:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-bottom: 2px solid black;
+    box-shadow: 0 2px 2px 2px rgb(48, 47, 47);
+}
+
+header .search-container {
+    display: flex;
+    align-items: center;
+}
+
+header .search {
+    padding: 8px;
+    border: none;
+    margin-right: 2px;
+
+}
+
+header .search-icon {
+    background-color: #fff;
+    color: #ff5722;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+header .search-icon:hover {
+    background-color: #ddd;
+    box-shadow: 0 2px 2px 2px black;
+}
+
+
+
+/* main */
+.wrapper h1{
+    display: flex;
+    justify-content: center;
+}
+section .container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "person"
+        "crd-classic"
+        "crd-design"
+        "button";
+}
+
+.design,
+.classic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left {
+    grid-area: person;
+    display: flex;
+    justify-content: center;
+}
+
+.classic {
+    grid-area: crd-classic;
+}
+
+.design {
+    grid-area: crd-design;
+}
+
+.down {
+    grid-area: button;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.down .btn {
+    background-color: magenta;
+    color: #000000;
+}
+
+.btn a {
+    text-decoration: none;
+
+}
+
+.btn {
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 20px;
+}
+/* contact page */
+.owner h1{
+    font-size: 2.5rem;
+}
+#contact form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+#contact label {
+    display: block;
+
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#contact input {
+    width: 100%;
+    height: 2rem;
+    margin: 10px 0px;
+}
+
+#contact textarea {
+    width: 96%;
+    padding: 20px;
+    resize: vertical;
+}
+
+#contact button {
+    background-color: magenta;
+    color: #000000;
+    color: black;
+    border: none;
+    cursor: pointer;
+    max-width: 15%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background-color: #000000;
+    color:  magenta;
+}
+#contact ul{
+    list-style: none;
+}
+
+
+
+#contact iframe {
+    width: 100%;
+}
+  
+  #contact form input,
+  form textarea {
+    display: block;
+    width: 90%;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+  }
+  
+  #contact form textarea {
+    min-height: 150px;
+    max-height: 150px;
+    height: 150px;
+    resize: none;
+    width: 90%;
+  }
+  #contact, h1, .ab-left, .ab-right{
+    margin: 20px;
+  }
+
+  
+/* footer */
+footer {
+    background: white url(../images/bg.png);
+    margin-bottom: -16px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 970px) {
+    header .wrapper{
+        flex-direction: row;
+        padding-right: 30px;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+    header nav ul{
+        flex-direction: row;
+    }
+    header nav ul li {
+        margin: 20px;
+    }
+    section .container{
+        grid-template-areas: 
+        "person crd-classic crd-design"
+        "button button button";
+    }
+    .grid-con {
+        display: grid;
+        gap: 2rem;
+        margin: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "s s"
+            "l h"
+        ;
+    }
+
+    .grid-con .owner {
+        grid-area: s;
+    }
+
+    .grid-con .location {
+        grid-area: h;
+    }
+
+    .grid-con .contact-section{
+        grid-area: l;
+    }
+      /* about */
+  
+  .ab-right{
+    
+    display: grid;
+    grid-template-areas: 
+    "cd1 cd2"
+    "cd3 cd4";
+    gap: 20px;
+  }
+
+    .ab-left{
+        
+        background-color: rgba(0, 0, 0, 0.15);
+        padding: 10px;
+    }
+    
+    .card-1{
+        grid-area: cd1;
+    }
+    .card-2{
+        grid-area: cd2;
+    }
+    .card-3{
+        grid-area: cd3;
+    }
+    .card-4{
+        grid-area: cd4;
+    }
+    
+}

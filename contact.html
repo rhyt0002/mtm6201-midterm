@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-<link rel="stylesheet" href="css/style.css">
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
     <header class="bg-cr">
         <div class="wrapper">
-        <div class="logo"><a href="index.html"> <img src="images/logo.jpg" alt="logo"></a></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <form class="search-container">
-            <input type="text" placeholder="Search" class="search">
-            <button class="material-symbols-outlined search-icon">search</button>
-        </form>
-    </div>
+            <div class="logo"><a href="index.html"> <img src="images/logo.jpg" alt="logo"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <form class="search-container">
+                <input type="text" placeholder="Search" class="search">
+                <button class="material-symbols-outlined search-icon">search</button>
+            </form>
+        </div>
     </header>
     <main>
-        
+        <div class="wrap">
+            <section id="contact" class="grid-con">
+                <section class="owner" role="region" aria-label="Owner Information">
+                    <h1>Meet the owner</h1>
+                    <ul itemscope itemtype="https://schema.org/Person">
+                        <li itemprop="name">John Doe</li>
+                        <li itemprop="jobTitle">CEO</li>
+                        <li itemprop="email">johnjoe@jambox.ca</li>
+                        <li itemprop="telephone">613-000-0000</li>
+                        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="name">Baking Delights</span>
+                            <span itemprop="streetAddress">123 Guitar Road, </span>
+                            <span itemprop="addressLocality">Ottawa</span>
+                            <span itemprop="addressRegion">Ontario</span>
+                            <span itemprop="postalCode"> B3T 0L0</span>
+                        </li>
+                    </ul>
+                </section>
+                <div class="contact-section" id="contact" aria-label="contact Inforrmation">
+                    <h2>Contact Us</h2>
+                    <form action="thanks.html">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Full Name">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject">
+                        <label for="message">Your Message</label>
+                        <textarea id="message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div>
+                    <h2>Location</h2>
+                    <div class="location">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.8902600913!2d-76.36466691093754!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1690295947284!5m2!1sen!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </section>
+        </div>
     </main>
+    <footer>
+        <div class="wrapper">
+            <p>&copy;Copyrights Baking Delights 2023;</p>
+            <p>All images are taken from <a
+                    href="https://www.google.com/search?q=cake&sca_esv=576343061&rlz=1C1ONGR_enCA1053CA1053&tbm=isch&sxsrf=AM9HkKmAXEsgHiXGudnPmMjIRwiNMHWfjg:1698200053203&source=lnms&sa=X&ved=2ahUKEwi21raXkJCCAxXOHTQIHXfyAKYQ_AUoAXoECAQQAw&biw=1536&bih=739&dpr=1.25">Google</a>
+            </p>
+        </div>
+
+    </footer>
+
 </body>
+
 </html>
