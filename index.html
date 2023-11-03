@@ -5,81 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baking Delights</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <ul class="skip-links">
+        <li><a href="#nav">Skip to nav</a></li>
+        <li><a href="#main">Skip to content</a></li>
+    </ul>
+    <header class="bg-cr">
+        <div class="wrapper">
+            <div class="logo"><a href="index.html"> <img src="images/logo.jpg" alt="logo"></a></div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <form class="search-container">
+                <input type="text" placeholder="Search" class="search">
+                <button class="material-symbols-outlined search-icon">search</button>
+            </form>
+        </div>
     </header>
-    <main>
-        <h1>Welcome to Baking Delights</h1>
-        <section>
-            <div class="container">
-                <!-- left side of page -->
-                <div class="left">
-                    <img src="images/baker.png" alt="baker standing by cake">
-                </div>
-                <!-- right side of cake -->
-                <div class="right">
-                    <!-- containing images and their content -->
-                    <div class="up">
-                        <div class="design">
-                            <h2>Design cakes</h2>
-                            <!-- for design cakes -->
+    <main id="main">
+        <div class="wrapper">
+            <h1>Welcome to Baking Delights</h1>
+            <section>
+                <div class="container">
+                    <!-- left side of page -->
+                    <div class="left">
+                        <picture>
+                            
+                            <source srcset="images/person_2.png 1x" media="(max-width:969px)" />
+                            
+                            <source srcset="images/person.png 1x" media="(min-width:970px)" />
+
+                            <img src="images/person.png" alt="placeholder">
+                        </picture>
+                    </div>
+                    <!-- right side of page -->
+                    <div class="design">
+                        <h2>Design cakes</h2>
+                        <!-- for design cakes -->
+                        <picture>
+                            <!-- landscape -->
+                            <source srcset="images/cake-1-480_x_480.jpg 1x" media="(max-width:969px)" />
+                            <!-- square -->
+                            <source srcset="images/cake-1-320_x_281.jpg 1x" media="(min-width:970px)" />
+                            <img src="images/cake-1.jpg" alt="placeholder">
+                        </picture>
+                        <p>Cake design is an art form that combines culinary knowledge with artistic ideas. From
+                            beautiful wedding cakes to quirky birthday creations, the field of cake designprovides a
+                            canvas for expert bakers and pastry artists to exhibit their abilities. Every aspect, from
+                            the flavours and fillings to the elaborate embellishments and colour palettes, is important
+                            in creating a cake that not only tantalises the taste senses but also captures the soul of
+                            any occasion. Each cake tells a unique tale, whether it's via the painstaking arrangement of
+                            fondant flowers, the expert piping of elaborate designs, or the imaginative use of edible
+                            ingredients like gold leaf or edible flowers. Cake design is a fascinating adventure of
+                            transforming sugar, flour, and imagination into delicious forms.</p>
+                    </div>
+                    <div class="classic">
+                        <h2>Classic cakes</h2>
+                        <!-- for classic cakes -->
+                        <div class="card">
                             <picture>
-                                <source srcset="images/design-320_x281.jpg 1x,
-                                images/design-640_x_563.jpg 2x,
-                                images/design-960_x_845.jpg 3x" media="(max-width:480px)" />
-                          
-                                <source srcset="images/design-480_x_480.jpg 1x,
-                                images/design-960_x_960.jpg 2x,
-                                images/design-1440_x_1440.jpg 3x" media="(min-width:1200px)" />
-                          
-                                <img src="images/design.jpg" alt="placeholder-design">
-                              </picture>
-                            <p>Cake design is an art form that combines culinary knowledge with artistic ideas. From beautiful wedding cakes to quirky birthday creations, the field of cake design provides a canvas for expert bakers and pastry artists to exhibit their abilities. Every aspect, from the flavours and fillings to the elaborate embellishments and colour palettes, is important in creating a cake that not only tantalises the taste senses but also captures the soul of any occasion. Each cake tells a unique tale, whether it's via the painstaking arrangement of fondant flowers, the expert piping of elaborate designs, or the imaginative use of edible ingredients like gold leaf or edible flowers. Cake design is a fascinating adventure of transforming sugar, flour, and imagination into delicious forms.</p>
-                        </div>
-                        <div class="class">
-                            <h2>Classic cakes</h2>
-                            <picture>
-                                <source srcset="images/classic-320_x281.jpeg 1x,
-                                images/classic-640_x_563.jpeg 2x,
-                                images/classic-960_x_845.jpeg 3x" media="(max-width:480px)" />
-                          
-                                <source srcset="images/classic-480_x_480.jpeg 1x,
-                                images/classic-960_x_960.jpeg 2x,
-                                images/classic-1440_x_1440.jpeg 3x" media="(min-width:1200px)" />
-                          
-                                <img src="images/classic.jpeg" alt="placeholder-classic">
-                              </picture>
-                            <p>Classic cakes have a timeless charm, transcending fads and capturing the essence of tradition in the world of baking. These favourite confections, such as the rich and velvety chocolate cake, the soft and moist carrot cake, or the beautiful and light sponge cake, inspire a sense of nostalgia and comfort. Classic cakes are often distinguished by their simplicity, depending on a harmonious balance of high-quality ingredients, skilled baking processes, and ancient recipes passed down through generations. They are a pleasant reminder of our common culinary history, highlighting the joy of sitting around a table to savour the familiar and exquisite flavours that have endured the test of time. Classic cakes are a delightful monument to the eternal joy that may be found in them.</p>
+                                <!-- landscape -->
+                                <source srcset="images/cake-2-480_x_480.jpg 1x" media="(max-width:969px)" />
+                                <!-- square -->
+                                <source srcset="images/cake-2-320_x_281.jpg 1x" media="(min-width:970px)" />
+                                <img src="images/cake-2.jpg" alt="placeholder">
+                            </picture>
+                            <p>Classic cakes have a timeless charm, transcending fads and capturing the essence of
+                                tradition
+                                in the world of baking. These favourite confections, such as the rich and velvety
+                                chocolate
+                                cake, the soft and moist carrot cake, or the beautiful and light sponge cake, inspire a
+                                sense of nostalgia and comfort. Classic cakes are often distinguished by their
+                                simplicity,
+                                depending on a harmonious balance of high-quality ingredients, skilled baking processes,
+                                and
+                                ancient recipes passed down through generations. They are a pleasant reminder of our
+                                common
+                                culinary history, highlighting the joy of sitting around a table to savour the familiar
+                                and
+                                exquisite flavours that have endured the test of time. Classic cakes are a delightful
+                                monument to the eternal joy that may be found in them.</p>
                         </div>
                     </div>
                     <!-- containing link for more details on cakes -->
+
                     <div class="down">
-                        <a href="https://en.wikipedia.org/wiki/Cake">
-                            <button>Click here for more</button>
-                        </a>
+
+                        <button class="btn"><a href="https://en.wikipedia.org/wiki/Cake">Order here</a></button>
+
                     </div>
                 </div>
-            </div>
-        </section>
+
+            </section>
+        </div>
     </main>
-
-
-    <main>
-
-    </main>
-
-
     <footer>
+        <div class="wrapper">
+            <p>&copy;Copyrights Baking Delights 2023;</p>
+            <p>All images are taken from <a
+                    href="https://www.google.com/search?q=cake&sca_esv=576343061&rlz=1C1ONGR_enCA1053CA1053&tbm=isch&sxsrf=AM9HkKmAXEsgHiXGudnPmMjIRwiNMHWfjg:1698200053203&source=lnms&sa=X&ved=2ahUKEwi21raXkJCCAxXOHTQIHXfyAKYQ_AUoAXoECAQQAw&biw=1536&bih=739&dpr=1.25">Google</a>
+            </p>
+        </div>
 
     </footer>
 </body>
