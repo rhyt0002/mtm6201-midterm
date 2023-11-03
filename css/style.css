@@ -37,6 +37,28 @@ body main .wrapper {
 .skip-links li a:focus {
     top: 0;
 }
+picture:hover{
+    opacity: 0.25;
+}
+.left picture:hover{
+    animation: size 3s ease-in-out;
+    opacity: 1;
+}
+@keyframes size {
+    0%, 100%{
+        transform: scale(1);
+
+    }
+    25%, 75%{
+        transform: scale(1.10);
+
+    }
+    50%{
+        transform: scale(1.15);
+    }
+    
+}
+
 
 /* header */
 header.bg-cr {
@@ -254,6 +276,9 @@ footer {
     margin-bottom: -16px;
     padding: 10px;
 }
+
+
+
 
 @media screen and (min-width: 970px) {
     header .wrapper{
